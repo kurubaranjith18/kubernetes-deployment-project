@@ -23,42 +23,25 @@ The project includes Deployment, Service, Ingress, ConfigMap, Secret, and Horizo
 ### 1️⃣ Apply Deployment
 ```sh
 kubectl apply -f deployment.yaml
-```
-###2️⃣ Apply Service
-```sh
+2️⃣ Apply Service
 kubectl apply -f service.yaml
-```
-###3️⃣ Apply ConfigMap & Secret
-```sh
+3️⃣ Apply ConfigMap & Secret
 kubectl apply -f configmap.yaml
 kubectl apply -f secret.yaml
-```
-###4️⃣ Apply Ingress
-```sh
+4️⃣ Apply Ingress
 kubectl apply -f ingress.yaml
-```
-###5️⃣ Apply Autoscaling (HPA)
-```sh
+5️⃣ Apply Autoscaling (HPA)
 kubectl apply -f hpa.yaml
-```
-##📊 Verify Kubernetes Resources
-###Check Pods
-```sh
+📊 Verify Kubernetes Resources
+Check Pods
 kubectl get pods
-```
-###Check Services
-```sh
+Check Services
 kubectl get svc
-```
-###Check Ingress
-```sh
+Check Ingress
 kubectl get ingress
-```
-###Check HPA
-```sh
+Check HPA
 kubectl get hpa
-```
-##🌐 Accessing the Application
+🌐 Accessing the Application
 ▶ If using Minikube:
 Get Minikube IP
 
@@ -73,7 +56,7 @@ kubectl get svc
 Visit in browser:
 
 http://<external-ip>
-##⚡ Autoscaling Demo
+⚡ Autoscaling Demo
 To simulate CPU load and test the autoscaler:
 
 Start a load generator:
